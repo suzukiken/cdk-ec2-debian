@@ -1,14 +1,10 @@
 # Welcome to your CDK TypeScript project!
 
-This is a blank project for TypeScript development with CDK.
+This cdk project creates
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+* Ec2 Debian instance with UserData
 
-## Useful commands
+Commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
  * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `ssh admin@xx.xx.xx.xx -i ~/.ssh/xxxx.pem `  default user is "admin" https://wiki.debian.org/Amazon%20EC2

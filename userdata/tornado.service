@@ -1,0 +1,16 @@
+[Unit]
+Description=Tornado
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment="PORT=80"
+Environment="LOGFILE=/var/log/webserver"
+WorkingDirectory=/opt
+ExecStart=/usr/bin/python3 /opt/tornado_server.py start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
